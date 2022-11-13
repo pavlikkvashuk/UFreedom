@@ -9,7 +9,7 @@ const Profile = () => {
                 <img src='https://cdn-icons-png.flaticon.com/512/3237/3237472.png' />
             </div>
             <div>
-                ava+decription
+                ava+description
             </div>
             <MyPosts />
         </div>

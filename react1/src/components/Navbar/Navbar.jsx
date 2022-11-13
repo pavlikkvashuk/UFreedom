@@ -6,15 +6,12 @@ import s from './Navbar.module.css'
 const Navbar = () => {
   return (
     <nav className={s .nav}>
-      <div className={`${s.item} ${s.active}`}><a>Donate</a></div>
-      <div className={s .item}><a>Profile</a></div>
-      <div className={s .item}><a>Groups</a></div>
-      <div className={s .item}><a>Messages</a></div>
-      <div className={s .item}><a>News</a></div>
-      <div className={s .item}><a>Video</a></div>
-      <div className={s .item}><a>Music</a></div>
-      <div className={s .item}><a>Saved</a></div>
-      <div className={s .item}><a>Settings</a></div>
+      <div className={`${s.item} ${s.active}`}><a href='/donate'>Donate</a></div>
+      <div className={s .item}><a href="/profile">Profile</a></div>
+      <div className={s .item}><a href="/groups">Groups</a></div>
+      <div className={s .item}><a href="/dialogs">Messages</a></div>
+      <div className={s .item}><a href='/news'>News</a></div>
+      <div className={s .item}><a href='/settings'>Settings</a></div>
 
     </nav>
   )
