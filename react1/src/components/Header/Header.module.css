@@ -1,0 +1,14 @@
+.header {
+    
+    grid-area: h;
+    background-color: rgb(1, 119, 197);
+    color: white;
+    vertical-align:middle;
+    
+    
+    
+}
+.header img {
+    width: 50px;
+    vertical-align: middle;
+}

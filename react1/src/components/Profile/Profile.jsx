@@ -1,0 +1,20 @@
+import React from 'react';
+import MyPosts from './MyPosts/MyPosts';
+import s from './Profile.module.css';
+
+const Profile = () => {
+    return (
+        <div className={s.content}>
+            <div>
+                <img src='https://cdn-icons-png.flaticon.com/512/3237/3237472.png' />
+            </div>
+            <div>
+                ava+decription
+            </div>
+            <MyPosts />
+        </div>
+
+    );
+
+}
+export default Profile;
