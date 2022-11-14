@@ -20,7 +20,7 @@ const App = (props) => {
         <div className="app-content">
           <Routes>
             <Route path='/profile' element={<Profile />}/>
-            <Route path='/dialogs' element={<Dialogs />}/>
+            <Route path='/dialogs/*' element={<Dialogs />}/>
             <Route path='/groups' element={<Groups/>}/>
             <Route path='/donate' element={<Donate/>}/>
             <Route path='/news' element={<News/>}/>

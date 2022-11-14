@@ -5,7 +5,7 @@ import s from './Profile.module.css';
 const Profile = () => {
     return (
         <div>
-            <div>
+            <div className='imgpr'>
                 <img src='https://cdn-icons-png.flaticon.com/512/3237/3237472.png' />
             </div>
             <div>
