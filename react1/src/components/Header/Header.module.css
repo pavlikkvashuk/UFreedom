@@ -1,13 +1,21 @@
 .header {
-    
+
     grid-area: h;
-    background-color: rgb(1, 119, 197);
+    background-color: #26547c;
     color: white;
-    vertical-align:middle;
-    
-    
-    
+    vertical-align: middle;
+    border-radius: 15px;
+    border-color: #DFF6FF;
+    border-style: solid;
+    box-shadow: 5px 2px 2px #256d85;
+    font-style: oblique;
+    font-weight: bold;
+
+
+
+
 }
+
 .header img {
     width: 50px;
     vertical-align: middle;

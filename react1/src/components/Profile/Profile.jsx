@@ -1,19 +1,14 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
     return (
         <div>
-            <div className='imgpr'>
-                <img src='https://cdn-icons-png.flaticon.com/512/3237/3237472.png' />
-            </div>
-            <div>
-                ava+description
-            </div>
+            <ProfileInfo />
             <MyPosts />
         </div>
-
     );
 
 }

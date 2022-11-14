@@ -1,7 +1,11 @@
 .nav {
   grid-area: n;
-  background-color: rgb(1, 119, 197);
+  background-color: #26547c;
   padding: 20px;
+  border-radius: 15px;
+  border-color:#DFF6FF ;
+  border-style: solid;
+  box-shadow: 5px 2px 2px #256d85 ;
 }
 
 .item {
@@ -11,6 +15,6 @@
 }
 
 .active {
-  color: gold;
+  color: #ffd166; ;
   text-decoration: none;
 }
