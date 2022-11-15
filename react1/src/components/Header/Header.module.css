@@ -6,10 +6,11 @@
     vertical-align: middle;
     border-radius: 15px;
     border-color: #DFF6FF;
-    border-style: solid;
-    box-shadow: 5px 2px 2px #256d85;
-    font-style: oblique;
+    border-style: hidden;
+   
+    font-style:'Montserrat', sans-serif;
     font-weight: bold;
+    background-image: linear-gradient(to bottom right,#72B2E4 ,#92E1E2 );
 
 
 
@@ -19,4 +20,5 @@
 .header img {
     width: 50px;
     vertical-align: middle;
+    padding: 5px;
 }

@@ -3,9 +3,10 @@
   background-color: #26547c;
   padding: 20px;
   border-radius: 15px;
-  border-color:#DFF6FF ;
+  border-color:white ;
   border-style: solid;
-  box-shadow: 5px 2px 2px #256d85 ;
+ 
+  background-image: linear-gradient(to bottom right,#72B2E4 ,#92E1E2 );
 }
 
 .item {
@@ -15,6 +16,6 @@
 }
 
 .active {
-  color: #ffd166; ;
+  color: #034679 ;
   text-decoration: none;
 }
