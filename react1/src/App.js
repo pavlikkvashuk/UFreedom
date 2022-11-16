@@ -11,24 +11,25 @@ import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 
 
+
 const App = (props) => {
-   return (
-      <BrowserRouter>
+  return (
+    <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
         <div className="app-content">
           <Routes>
-            <Route path='/profile' element={<Profile />}/>
-            <Route path='/dialogs/*' element={<Dialogs />}/>
-            <Route path='/groups' element={<Groups/>}/>
-            <Route path='/donate' element={<Donate/>}/>
-            <Route path='/news' element={<News/>}/>
-            <Route path='/settings' element={<Settings/>}/>
+            <Route path='/profile' element={<Profile posts={props.posts} />} />
+            <Route path='/dialogs/*' element={<Dialogs dialogs={props.dialogs} messages={props.messages} />} />
+            <Route path='/groups' element={<Groups />} />
+            <Route path='/donate' element={<Donate />} />
+            <Route path='/news' element={<News />} />
+            <Route path='/settings' element={<Settings />} />
           </Routes>
         </div>
       </div>
     </BrowserRouter>
-   );
+  );
 }
 export default App;
