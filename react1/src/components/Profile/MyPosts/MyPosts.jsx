@@ -16,10 +16,10 @@ const MyPosts = (props) => {
                     <textarea></textarea>
                 </div>
                 <div>
-                    <button>Add Post</button>
+                <button class="button" type="button"><span>Add post</span></button>
                 </div>
                 <div>
-                    <button>Remove</button>
+                <button class="button" type="button"><span>Remove</span></button>
                 </div>
             </div>
             <div className={s.posts}>
