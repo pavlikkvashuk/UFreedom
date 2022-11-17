@@ -20,7 +20,15 @@ const Dialogs = (props) => {
             <div className={s.messages}>
 
                 {messagesElements}
-
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button class="button" type="button" ><span>Add message</span></button>
+                </div>
+                <div>
+                    <button class="button" type="button" ><span>Remove</span></button>
+                </div>
             </div>
         </div>
     )
