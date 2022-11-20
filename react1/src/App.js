@@ -10,8 +10,6 @@ import Donate from './components/Donate/Donate';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
 
-
-
 const App = (props) => {
   return (
     <BrowserRouter>
@@ -20,7 +18,7 @@ const App = (props) => {
         <Navbar />
         <div className="app-content">
           <Routes>
-            <Route path='/profile' element={<Profile posts={props.posts} />} />
+            <Route path='/profile' element={<Profile posts={props.posts} addPost={props.addPost } updateNewPostText={props.updateNewPostText}/>} />
             <Route path='/dialogs/*' element={<Dialogs dialogs={props.dialogs} messages={props.messages} />} />
             <Route path='/groups' element={<Groups />} />
             <Route path='/donate' element={<Donate />} />
