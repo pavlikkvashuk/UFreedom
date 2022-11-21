@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import profileReducer from "./profile-reducer";
 
 let renderEntireTree  = () => {
 
@@ -59,5 +60,12 @@ export const updateNewPostText =(newText) => {
 export const subscribe = (observer) => {
     renderEntireTree = observer;
 }
+/*dispatch(action) {
+    this._state.profilePage = profileReducer(this._state.profilePage, action);
+    this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+
+    this._callsubscriber(this._state);
+
+}*/
 
 export default state;
