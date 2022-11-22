@@ -2,7 +2,9 @@ import { useCallback } from "react";
 import profileReducer from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer"
 
-let renderEntireTree  = () => {
+
+
+let rerenderEntireTree = () => {
 
 }
 
@@ -16,7 +18,7 @@ let state = {
             { id: 5, message: 'I am from Ukraine', likesCount: 999 },
             { id: 6, message: 'That is Great!', likesCount: 998 },
         ],
-    newPostText: 'UFreedom'   
+        newPostText: 'UFreedom'
 
     },
     dialogsPage: {
@@ -38,28 +40,23 @@ let state = {
     }
 }
 
-export const addPost =() => {
+export const addPost = () => {
     let newPost = {
-      id: 5,
-      message: state.profilePage.newPostText,
-      likesCount: 0
+        id: 5,
+        message: state.profilePage.newPostText,
+        likesCount: 0
     };
     state.profilePage.posts.push(newPost);
     state.profilePage.newPostText = '';
-    renderEntireTree (state);
+    rerenderEntireTree(state);
 }
 
-export const updateNewPostText =(newText) => {
-    let newPost = {
-      id: 5,
-      message: postMessage,
-      likesCount: 0
-    };
-    state.profilePage.newPostText = "newText";
-    renderEntireTree (state);
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
 }
 export const subscribe = (observer) => {
-    renderEntireTree = observer;
+    rerenderEntireTree = observer;
 }
 /*dispatch(action) {
     this._state.profilePage = profileReducer(this._state.profilePage, action);
