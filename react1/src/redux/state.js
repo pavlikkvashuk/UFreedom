@@ -37,27 +37,18 @@ let store = {
     getState() {
         return this._state;
     },
-    _callSubscriber () {},
-    addPost () {
-        let newPost = {
-            id: 5,
-            message: this._state.profilePage.newPostText,
-            likesCount: 0
-        };
-        this._state.profilePage.posts.push(newPost);
-        this._state.profilePage.newPostText = '';
-        this._callSubscriber();
-    },
-    updateNewPostText (newText) {
-        this._state.profilePage.newPostText = newText;
-        this._callSubscriber();
-    },
-    subscribe (observer)  {
+    subscribe(observer) {
         this._callSubscriber = observer;
+    },
+    dispatch(action) {
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+
+        this._callSubscriber(this._state);
+
     }
 
-    
-    
+
 }
 export default store;
 
@@ -66,11 +57,5 @@ export default store;
 
 
 
-/*dispatch(action) {
-    this._state.profilePage = profileReducer(this._state.profilePage, action);
-    this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
 
-    this._callsubscriber(this._state);
-
-}*/
 
