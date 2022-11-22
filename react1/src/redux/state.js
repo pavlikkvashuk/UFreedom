@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import profileReducer from "./profile-reducer";
+import dialogsReducer from "./dialogs-reducer"
 
 let renderEntireTree  = () => {
 

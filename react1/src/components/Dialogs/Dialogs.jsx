@@ -3,11 +3,12 @@ import s from './Dialogs.module.css'
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
+
 const Dialogs = (props) => {
 
-    let dialogsElements = props.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
+    let dialogsElements = props.dialogs.map(d => <DialogItem name={d.name} id={d.id} key={Math.random()} />);
 
-    let messagesElements = props.messages.map(m => <Message message={m.message} />)
+    let messagesElements = props.messages.map(m => <Message message={m.message} key={Math.random()} />)
 
 
     return (
@@ -24,11 +25,9 @@ const Dialogs = (props) => {
                     <textarea></textarea>
                 </div>
                 <div>
-                    <button class="button" type="button" ><span>Add message</span></button>
+                    <button className='button' type="button" ><span>Add message</span></button>
                 </div>
-                <div>
-                    <button class="button" type="button" ><span>Remove</span></button>
-                </div>
+                
             </div>
         </div>
     )
