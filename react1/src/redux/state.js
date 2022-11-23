@@ -1,7 +1,8 @@
 import { useCallback } from "react";
 import profileReducer from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer"
-
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
 let store = {
     _state: {
         profilePage: {
@@ -47,9 +48,10 @@ let store = {
         this._callSubscriber(this._state);
 
     }
-
-
 }
+export const addPostActionCreator = () => ({ type: ADD_POST })
+export const updateNewPostTextActionCreator = (text) => ({ type: UPDATE_NEW_POST_TEXT, newText: text })
+
 export default store;
 
 
