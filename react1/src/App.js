@@ -9,7 +9,7 @@ import Groups from './components/Groups/Groups';
 import Donate from './components/Donate/Donate';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
-import store from './redux/state';
+import store from './redux/store';
 
 const App = (props) => {
   return (
