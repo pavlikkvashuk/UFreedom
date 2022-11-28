@@ -9,6 +9,7 @@ import Groups from './components/Groups/Groups';
 import Donate from './components/Donate/Donate';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
+import store from './redux/state';
 
 const App = (props) => {
   return (
@@ -19,7 +20,7 @@ const App = (props) => {
         <div className="app-content">
           <Routes>
             <Route path='/profile' element={<Profile posts={props.posts} dispatch={props.dispatch} />} />
-            <Route path='/dialogs/*' element={<Dialogs dialogs={props.dialogs} messages={props.messages} />} />
+            <Route path='/dialogs/*' element={<Dialogs store={props.store} dialogs={props.dialogs} messages={props.messages} />} />
             <Route path='/groups' element={<Groups />} />
             <Route path='/donate' element={<Donate />} />
             <Route path='/news' element={<News />} />

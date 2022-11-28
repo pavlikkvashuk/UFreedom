@@ -1,8 +1,11 @@
-import { useCallback } from "react";
 import profileReducer from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer"
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
+
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY';
+const SEND_MESSAGE = 'SEND_MESSAGE';
+
 let store = {
     _state: {
         profilePage: {
@@ -30,10 +33,9 @@ let store = {
                 { id: 2, message: 'How is your project?' },
                 { id: 3, message: 'When do you show it us?' },
                 { id: 4, message: 'Hru?' },
-                { id: 5, message: 'Good Morning!' },
-            ]
-
-        }
+            ],
+            newMessageBody: "",
+        },
     },
     getState() {
         return this._state;
@@ -51,6 +53,10 @@ let store = {
 }
 export const addPostActionCreator = () => ({ type: ADD_POST })
 export const updateNewPostTextActionCreator = (text) => ({ type: UPDATE_NEW_POST_TEXT, newText: text })
+
+export const sendMessageCreator = () => ({ type: SEND_MESSAGE })
+export const updateNewMessageBodyCreator = (body) => ({ type: UPDATE_NEW_MESSAGE_BODY, body: body })
+
 
 export default store;
 

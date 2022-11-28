@@ -16,6 +16,7 @@ let rerenderEntireTree = () => {
                 dialogs={store.getState().dialogsPage.dialogs}
                 messages={store.getState().dialogsPage.messages}
                 dispatch={store.dispatch.bind(store)}
+                store={store}
 
             />
         </React.StrictMode>
