@@ -1,4 +1,4 @@
-import profileReducer from "./profile-reducer";
+/*import profileReducer from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer"
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
@@ -59,6 +59,7 @@ export const updateNewMessageBodyCreator = (body) => ({ type: UPDATE_NEW_MESSAGE
 
 
 export default store;
+*/
 
 
 
