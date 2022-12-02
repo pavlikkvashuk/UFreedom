@@ -1,0 +1,21 @@
+.nav {
+  grid-area: n;
+  background-color: #26547c;
+  padding: 20px;
+  border-radius: 15px;
+  border-color:white ;
+  border-style: solid;
+ 
+  background-image: linear-gradient(to bottom right,#72B2E4 ,#92E1E2 );
+}
+
+.item {
+  color: white;
+  text-decoration: none;
+
+}
+
+.active {
+  color: #034679 ;
+  text-decoration: none;
+}

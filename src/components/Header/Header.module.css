@@ -1,0 +1,31 @@
+.header {
+
+    grid-area: h;
+    background-color: #26547c;
+    color: white;
+    vertical-align: middle;
+    border-radius: 15px;
+    border-color: #DFF6FF;
+    border-style: hidden;
+
+    font-style: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom right, #72B2E4, #92E1E2);
+
+
+
+
+}
+
+.header img {
+    width: 50px;
+    vertical-align: middle;
+    padding: 5px;
+    background-image: linear-gradient(to bottom right, #72B2e4, #FAEE9E);
+    border-radius: 10px;
+}
+
+.header span {
+    padding: 10px;
+    color: #FAEE9E;
+}

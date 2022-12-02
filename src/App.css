@@ -1,0 +1,31 @@
+.app-wrapper {
+    margin: 0 auto;
+    display: grid;
+    width: 1200 px;
+    grid-template-areas:
+        "h h"
+        "n c";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    border-radius: 10px;
+    font-style: initial;
+    font-size: 20px;
+    font-size:1.5vw;
+    
+    
+}
+
+.app-content {
+    grid-area: c;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.button{
+    color: #26547c;
+    background-image: linear-gradient(to bottom right,#72B2E4 ,#92E1E2 );
+    border-radius: 5px;
+    border-color: white;
+    font-size: 20px;
+}
