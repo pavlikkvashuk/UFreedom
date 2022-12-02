@@ -5,12 +5,10 @@ import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile.jsx';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Groups from './components/Groups/Groups';
-import News from './components/News/News';
-import Settings from './components/Settings/Settings';
+import UsersContainer from './components/Users/UsersContainer';
 
 
-const App = (props) => {
+const App = () => {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
@@ -18,11 +16,9 @@ const App = (props) => {
         <Navbar />
         <div className="app-content">
           <Routes>
-            <Route path='/profile' element={<Profile posts={props.posts} dispatch={props.dispatch} />} />
-            <Route path='/dialogs/*' element={<DialogsContainer store={props.store} />} />
-            <Route path='/groups' element={<Groups />} />
-            <Route path='/news' element={<News />} />
-            <Route path='/settings' element={<Settings />} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/dialogs' element={<DialogsContainer />} />
+            <Route path='/users' element={<UsersContainer />} />
           </Routes>
         </div>
       </div>
