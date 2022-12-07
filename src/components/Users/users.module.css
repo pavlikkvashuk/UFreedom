@@ -8,5 +8,10 @@
     background-image: linear-gradient(to bottom right,#72B2E4 ,#92E1E2 );
     border-radius: 5px;
     border-color: white;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+.selectedPage {
+    font-weight: bold;
 }
