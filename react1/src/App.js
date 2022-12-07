@@ -7,7 +7,7 @@ import Profile from './components/Profile/Profile.jsx';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import UsersContainer from './components/Users/UsersContainer';
 
-//r
+
 const App = () => {
   return (
     <BrowserRouter>

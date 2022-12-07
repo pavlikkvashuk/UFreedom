@@ -5,8 +5,11 @@
   border-radius: 15px;
   border-color:white ;
   border-style: solid;
- 
   background-image: linear-gradient(to bottom right,#72B2E4 ,#92E1E2 );
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+
 }
 
 .item {
