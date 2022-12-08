@@ -2,7 +2,6 @@ import React from "react";
 import styles from './users.module.css';
 import userPhoto from '../../assets/images/user.png';
 
-
 let Users = (props) => {
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
 
@@ -15,7 +14,7 @@ let Users = (props) => {
         <div>
             {pages.map(p => {
                 return <span className={props.currentPage === p && styles.selectedPage}
-                    onClick={() => {this.onPageChanged(p)}}>{p}</span>
+                    onClick={() => { this.onPageChanged(p) }}>{p}</span>
             })}
         </div>
         {
